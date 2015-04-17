@@ -35,7 +35,7 @@ var allSubstrings1 = function(s){
 	for(var i = 0; i< s.length; i++) {
 		for(var j = i+1; j<=s.length;j++) {
 			var str = s.substring(i,j);
-            result = result + str + ", ";
+			result = result + str + ", ";
 		}
 	}
 	return result;
@@ -59,9 +59,9 @@ var maxWord = function(s) {
 	words = s.split(" ");
 	var maxSoFar = words[0]
 	for(var i = 0; i < words.length; ++i){
-			if (maxSoFar.length < words[i].length)
-				{ maxSoFar = words[i]}
+		if (maxSoFar.length < words[i].length)
+			{ maxSoFar = words[i]}
 
-			}
- return maxSoFar;
+	}
+	return maxSoFar;
 }
